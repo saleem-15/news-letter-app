@@ -1,5 +1,6 @@
 import 'package:news_letter/core/resources/manager_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:news_letter/features/on_boarding/presentation/view/on_boarding_view.dart';
 import 'package:news_letter/features/splash/presentation/view/splash_view.dart';
 
 import '../config/dependency_injection.dart';
@@ -16,8 +17,11 @@ class RouteGenerator {
     switch (settings.name) {
       case Routes.splashView:
         initSplash();
-
         return MaterialPageRoute(builder: (_) => const SplashView());
+
+      case Routes.outBoardingView:
+        initOutBoarding();
+        return MaterialPageRoute(builder: (_) => OnBoardingView());
 
       case Routes.exploreView:
         return MaterialPageRoute(builder: (_) => const ExploreView());

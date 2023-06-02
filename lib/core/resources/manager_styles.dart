@@ -15,12 +15,13 @@ TextStyle _textStyle({
     fontWeight: fontWeight,
     color: color,
     decoration: decoration,
+    
   );
 }
 
 TextStyle getRegularTextStyle({
   required double fontSize,
-  required Color color,
+  Color color = ManagerColors.textSecondryColor,
   TextDecoration decoration = TextDecoration.none,
 }) {
   return _textStyle(
@@ -46,7 +47,7 @@ TextStyle getLogoTextStyle({
 
 TextStyle getBoldTextStyle({
   required double fontSize,
-  required Color color,
+  Color color = ManagerColors.textColor,
   TextDecoration decoration = TextDecoration.none,
 }) {
   return _textStyle(

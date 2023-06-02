@@ -23,11 +23,8 @@ class ManagerColors {
   static const Color selectedCategory = Color(0xFFFFC727);
   static const Color backgroundCourses = Color(0xffFFF3F3);
   static const Color textColorProfile = Color(0xff737373);
-  static const Color activeSwitchColor = Color(0xff4CD964);
   static const Color textColorAppoint = Color(0xff928F8E);
   static const Color activationStatus = Color(0xffCACACA);
-  static const Color completedStatus = Color(0xff30C165);
-  static const Color cancelledStatus = Color(0xffF05353);
   static const Color searchColor = Color(0xffADADAD);
   static const Color descriptionColor = Color(0xff6A7F84);
   static const Color scaffoldBackgroundColorLight = Colors.white;

@@ -1,3 +1,4 @@
+import 'package:news_letter/core/resources/manager_colors.dart';
 import 'package:news_letter/core/resources/manager_fonts.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +29,18 @@ TextStyle getRegularTextStyle({
     fontWeight: ManagerFontWeight.regular,
     color: color,
     decoration: decoration,
+  );
+}
+
+TextStyle getLogoTextStyle({
+  double? fontSize,
+}) {
+  return _textStyle(
+    fontSize: fontSize ?? ManagerFontSize.s52,
+    fontFamily: ManagerFontFamily.fontFamily,
+    fontWeight: ManagerFontWeight.bold,
+    color: ManagerColors.indigo,
+    decoration: TextDecoration.none,
   );
 }
 

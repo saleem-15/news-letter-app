@@ -4,9 +4,12 @@ import 'package:get/get.dart';
 import 'package:news_letter/routes/routes.dart';
 
 import 'config/constants.dart';
+import 'config/dependency_injection.dart';
 import 'core/service/theme_service.dart';
 
-void main() {
+Future<void> main() async {
+  await initModule();
+
   runApp(MainApp());
 }
 

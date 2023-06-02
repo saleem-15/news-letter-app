@@ -1,15 +1,18 @@
 import 'package:news_letter/core/resources/manager_strings.dart';
 import 'package:flutter/material.dart';
 
+import '../features/explore/presentation/view/explore_view.dart';
+
 class Routes {
   static const String splashView = '/splash_view';
+  static const String exploreView = '/explore_view';
 }
 
 class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
     switch (settings.name) {
-      // case Routes.splashView:
-      //   return MaterialPageRoute(builder: (_) => const SplashView());
+      case Routes.exploreView:
+        return MaterialPageRoute(builder: (_) => const ExploreView());
 
       default:
         return unDefinedRoute();

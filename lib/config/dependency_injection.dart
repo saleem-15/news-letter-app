@@ -4,6 +4,7 @@ import 'package:news_letter/core/storage/local/app_settings_shared_preferences.d
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
+import 'package:news_letter/features/on_boarding/presentation/controller/on_boarding_controller.dart';
 import 'package:news_letter/features/splash/presentation/controller/splash_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -39,4 +40,13 @@ initSplash() {
 
 disposeSplash() {
   Get.delete<SplashController>();
+}
+
+initOutBoarding() {
+  disposeSplash();
+  Get.put<OnBoardingController>(OnBoardingController());
+}
+
+disposeOutBoarding() {
+  Get.delete<OnBoardingController>();
 }

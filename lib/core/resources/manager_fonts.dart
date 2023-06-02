@@ -17,6 +17,8 @@ class ManagerFontWeight {
 class ManagerFontSize {
   static double s14 = SizeUtil.setFontSize(14);
   static double s16 = SizeUtil.setFontSize(16);
+  static double s18 = SizeUtil.setFontSize(18);
   static double s20 = SizeUtil.setFontSize(20);
+  static double s32 = SizeUtil.setFontSize(32);
   static double s52 = SizeUtil.setFontSize(52);
 }

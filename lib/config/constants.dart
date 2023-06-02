@@ -16,8 +16,9 @@ class ConstantsPrefsKeys {
 }
 
 class ApiConstants {
-  static const String baseUrl = 'http://act-hub.actit.ps';
-  static const String message = 'message';
+  static const String apiKey = '8afe77481e534d1ab76a4dbf5d533508';
+   final String baseUrl = 'https://bengkelrobot.net:8003';
+
   static const String badRequest = 'Bad Request';
 
   // static const String authorization = 'authorization';
